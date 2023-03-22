@@ -1,0 +1,1 @@
+We take security concerns very seriously. Please use GitHub's [built-in reporting mechanism](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing/privately-reporting-a-security-vulnerability). Thanks for your support.
