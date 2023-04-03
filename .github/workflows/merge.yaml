@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: A step that occasionally fails
-        run: "if [ $(date +%s)  -lt 1680561350]; then exit 0; else exit 1; fi"
+        run: "if [ $(date +%s) -lt 1680561550]; then exit 0; else exit 1; fi"
         shell: bash
