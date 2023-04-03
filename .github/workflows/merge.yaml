@@ -1,0 +1,11 @@
+name: Merge CIs
+on:
+  merge_group:
+
+jobs:
+  merge_check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: A step that occasionally fails
+        run: exit 1
+        shell: bash
