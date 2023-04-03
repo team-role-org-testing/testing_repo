@@ -1,0 +1,11 @@
+name: Annoying CI
+on:
+  pull_request:
+  
+jobs:
+  annoy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: A required check not run for merge groups
+        run: sleep 30s
+        shell: bash
