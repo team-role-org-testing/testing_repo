@@ -1,0 +1,14 @@
+name: Delayer
+on:
+  pull_request:
+    branches:
+      - production
+  merge_group:
+    
+jobs:
+  delay:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delay the build for 45 seconds
+        run: sleep 45s
+        shell: bash
