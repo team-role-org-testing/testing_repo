@@ -1,11 +1,12 @@
 name: Merge CIs
 on:
   merge_group:
+  pull_request:
 
 jobs:
   merge_check:
     runs-on: ubuntu-latest
     steps:
       - name: A step that occasionally fails
-        run: exit 1
+        run: "if [ $(date +%s)  -lt 1680561350]; then exit 0; else exit 1; fi"
         shell: bash
