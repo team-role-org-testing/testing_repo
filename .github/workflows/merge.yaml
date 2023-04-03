@@ -1,6 +1,7 @@
 name: Merge CIs
 on:
   merge_group:
+  pull_request:
 
 jobs:
   merge_check:
